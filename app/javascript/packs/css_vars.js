@@ -1,8 +1,5 @@
 import cssVars from 'css-vars-ponyfill';
 
-console.log('hello from css_vars');
-
-
 cssVars({
   include: 'link.theme-stylesheet',
   onlyLegacy: true,
