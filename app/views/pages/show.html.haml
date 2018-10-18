@@ -1,0 +1,11 @@
+- content_for :styles_head do
+  = theme_style_sheet @page.slug
+
+%p#notice= notice
+
+.page-show
+  = raw @page.body
+= link_to 'Back', pages_path
+
+- content_for :js_footer do
+  = javascript_pack_tag 'css_vars'
